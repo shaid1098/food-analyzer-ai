@@ -1,3 +1,4 @@
+import { z } from 'zod';
 import { getGeminiClient, isGeminiConfigured } from './geminiClient.js';
 import { FOOD_ANALYSIS_PROMPT } from './prompts.js';
 import { FoodIdentificationSchema } from '../../../../shared/schemas/index.js';
@@ -119,7 +120,7 @@ export class GeminiFoodAnalyzer {
         console.error('[FoodVerify][Gemini] Zod validation failed:', validated.error.issues);
         return {
           status: 'ERROR',
-          error: `Gemini response failed validation: ${validated.error.issues.map(i => i.message).join(', ')}`,
+          error: `Gemini response failed validation: ${validated.error.issues.map((i: z.ZodIssue) => i.message).join(', ')}`,
         };
       }
 
