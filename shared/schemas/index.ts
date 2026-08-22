@@ -57,7 +57,7 @@ export const FoodAnalysisRequestSchema = z.object({
   foodName: z.string().optional(),
   goal: UserGoal,
 }).refine(
-  (data) => data.image || data.foodName,
+  (data: { image?: string; foodName?: string }) => data.image || data.foodName,
   { message: 'Either an image or food name must be provided' }
 );
 export type FoodAnalysisRequest = z.infer<typeof FoodAnalysisRequestSchema>;

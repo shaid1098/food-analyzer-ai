@@ -191,7 +191,7 @@ export default function Result() {
                   <ShieldAlert className="w-4 h-4 text-red-400" /> Pipeline Warnings
                 </span>
                 <ul className="list-disc pl-4 space-y-0.5">
-                  {result.errors.map((e, idx) => (
+                  {result.errors.map((e: { stage: string; message: string; code?: string }, idx: number) => (
                     <li key={idx}><span className="font-semibold text-slate-300">[{e.stage}]</span>: {e.message}</li>
                   ))}
                 </ul>
@@ -251,7 +251,7 @@ export default function Result() {
                     <div>
                       <span className="text-slate-500 text-xs block">Detected Components</span>
                       <div className="flex flex-wrap gap-1.5 mt-1">
-                        {result.identification.visible_components.map((c, i) => (
+                        {result.identification.visible_components.map((c: string, i: number) => (
                           <span key={i} className="text-[10px] bg-slate-950 text-slate-400 px-2 py-0.5 rounded border border-slate-800 capitalize">{c}</span>
                         ))}
                       </div>
@@ -272,7 +272,7 @@ export default function Result() {
                       <div>
                         <span className="text-slate-500 text-xs block">Candidates Identified</span>
                         <div className="flex flex-wrap gap-1.5 mt-1">
-                          {result.verification.candidate_foods.map((c, i) => (
+                          {result.verification.candidate_foods.map((c: string, i: number) => (
                             <span key={i} className="text-[10px] bg-slate-950 text-slate-400 px-2 py-0.5 rounded border border-slate-800 capitalize">{c}</span>
                           ))}
                         </div>
@@ -282,7 +282,7 @@ export default function Result() {
                       <div>
                         <span className="text-slate-500 text-xs block">Evidence logs</span>
                         <ul className="text-[10px] text-slate-400 mt-1 list-disc pl-3">
-                          {result.verification.evidence.map((ev, i) => (
+                          {result.verification.evidence.map((ev: string, i: number) => (
                             <li key={i}>{ev}</li>
                           ))}
                         </ul>
@@ -316,14 +316,14 @@ export default function Result() {
                   <div className="bg-slate-950/30 p-4 rounded-xl border border-slate-800/80">
                     <h3 className="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2">Potential Benefits</h3>
                     <ul className="list-disc pl-4 text-xs text-slate-400 space-y-1.5">
-                      {result.explanation?.potential_benefits.map((b, i) => <li key={i}>{b}</li>)}
+                      {result.explanation?.potential_benefits.map((b: string, i: number) => <li key={i}>{b}</li>)}
                     </ul>
                   </div>
 
                   <div className="bg-slate-950/30 p-4 rounded-xl border border-slate-800/80">
                     <h3 className="text-xs font-bold text-amber-500 uppercase tracking-wider mb-2">Nutritional Highlights</h3>
                     <ul className="list-disc pl-4 text-xs text-slate-400 space-y-1.5">
-                      {result.explanation?.nutritional_highlights.map((h, i) => <li key={i}>{h}</li>)}
+                      {result.explanation?.nutritional_highlights.map((h: string, i: number) => <li key={i}>{h}</li>)}
                     </ul>
                   </div>
                 </div>
