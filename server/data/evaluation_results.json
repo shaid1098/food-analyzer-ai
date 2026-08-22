@@ -1,0 +1,209 @@
+[
+  {
+    "test_case_id": "01",
+    "expected_food": "banana",
+    "gemini_result": "banana",
+    "gemini_confidence": 0.98,
+    "fallback_triggered": false,
+    "final_result": "SUCCESS",
+    "correct": true,
+    "latency": 13832,
+    "timestamp": "2026-08-22T06:23:36.345Z"
+  },
+  {
+    "test_case_id": "02",
+    "expected_food": "apple",
+    "gemini_result": "Apple",
+    "gemini_confidence": 0.98,
+    "fallback_triggered": false,
+    "final_result": "SUCCESS",
+    "correct": true,
+    "latency": 14896,
+    "timestamp": "2026-08-22T06:23:51.242Z"
+  },
+  {
+    "test_case_id": "03",
+    "expected_food": "orange",
+    "gemini_result": "Orange",
+    "gemini_confidence": 0.95,
+    "fallback_triggered": false,
+    "final_result": "SUCCESS",
+    "correct": true,
+    "latency": 13694,
+    "timestamp": "2026-08-22T06:24:04.937Z"
+  },
+  {
+    "test_case_id": "04",
+    "expected_food": "tomato",
+    "gemini_result": "Tomato",
+    "gemini_confidence": 0.98,
+    "fallback_triggered": false,
+    "final_result": "SUCCESS",
+    "correct": true,
+    "latency": 14430,
+    "timestamp": "2026-08-22T06:24:19.367Z"
+  },
+  {
+    "test_case_id": "05",
+    "expected_food": "potato",
+    "gemini_result": "Potato",
+    "gemini_confidence": 0.95,
+    "fallback_triggered": false,
+    "final_result": "SUCCESS",
+    "correct": true,
+    "latency": 14558,
+    "timestamp": "2026-08-22T06:24:33.925Z"
+  },
+  {
+    "test_case_id": "06",
+    "expected_food": "carrot",
+    "gemini_result": "Carrot",
+    "gemini_confidence": 0.98,
+    "fallback_triggered": false,
+    "final_result": "SUCCESS",
+    "correct": true,
+    "latency": 197707,
+    "timestamp": "2026-08-22T06:27:51.633Z"
+  },
+  {
+    "test_case_id": "07",
+    "expected_food": "samosa",
+    "gemini_result": "Samosa",
+    "gemini_confidence": 0.95,
+    "fallback_triggered": false,
+    "final_result": "SUCCESS",
+    "correct": true,
+    "latency": 173106,
+    "timestamp": "2026-08-22T06:30:44.740Z"
+  },
+  {
+    "test_case_id": "08",
+    "expected_food": "chicken biryani",
+    "gemini_result": "Chicken Biryani",
+    "gemini_confidence": 0.95,
+    "fallback_triggered": false,
+    "final_result": "SUCCESS",
+    "correct": true,
+    "latency": 158360,
+    "timestamp": "2026-08-22T06:33:23.100Z"
+  },
+  {
+    "test_case_id": "09",
+    "expected_food": "dal",
+    "gemini_result": "Dal",
+    "gemini_confidence": 0.92,
+    "fallback_triggered": false,
+    "final_result": "SUCCESS",
+    "correct": true,
+    "latency": 101714,
+    "timestamp": "2026-08-22T06:35:04.814Z"
+  },
+  {
+    "test_case_id": "10",
+    "expected_food": "paneer",
+    "fallback_triggered": true,
+    "final_result": "SUCCESS",
+    "correct": false,
+    "latency": 3676,
+    "failure_reason": "Expected food \"paneer\" but got \"none\" with status \"SUCCESS\"",
+    "timestamp": "2026-08-22T06:35:08.490Z"
+  },
+  {
+    "test_case_id": "11",
+    "expected_food": "palak paneer",
+    "fallback_triggered": true,
+    "final_result": "SUCCESS",
+    "correct": false,
+    "latency": 3771,
+    "failure_reason": "Expected food \"palak paneer\" but got \"none\" with status \"SUCCESS\"",
+    "timestamp": "2026-08-22T06:35:12.261Z"
+  },
+  {
+    "test_case_id": "12",
+    "expected_food": "pizza",
+    "fallback_triggered": true,
+    "final_result": "SUCCESS",
+    "correct": false,
+    "latency": 3833,
+    "failure_reason": "Expected food \"pizza\" but got \"none\" with status \"SUCCESS\"",
+    "timestamp": "2026-08-22T06:35:16.094Z"
+  },
+  {
+    "test_case_id": "13",
+    "expected_food": "burger",
+    "fallback_triggered": true,
+    "final_result": "SUCCESS",
+    "correct": false,
+    "latency": 3778,
+    "failure_reason": "Expected food \"burger\" but got \"none\" with status \"SUCCESS\"",
+    "timestamp": "2026-08-22T06:35:19.872Z"
+  },
+  {
+    "test_case_id": "14",
+    "expected_food": "salad",
+    "fallback_triggered": true,
+    "final_result": "SUCCESS",
+    "correct": false,
+    "latency": 3748,
+    "failure_reason": "Expected food \"salad\" but got \"none\" with status \"SUCCESS\"",
+    "timestamp": "2026-08-22T06:35:23.620Z"
+  },
+  {
+    "test_case_id": "15",
+    "expected_food": "rice",
+    "fallback_triggered": true,
+    "final_result": "SUCCESS",
+    "correct": false,
+    "latency": 3634,
+    "failure_reason": "Expected food \"rice\" but got \"none\" with status \"SUCCESS\"",
+    "timestamp": "2026-08-22T06:35:27.254Z"
+  },
+  {
+    "test_case_id": "16",
+    "expected_food": "roti",
+    "fallback_triggered": true,
+    "final_result": "SUCCESS",
+    "correct": false,
+    "latency": 3753,
+    "failure_reason": "Expected food \"roti\" but got \"none\" with status \"SUCCESS\"",
+    "timestamp": "2026-08-22T06:35:31.007Z"
+  },
+  {
+    "test_case_id": "17",
+    "expected_food": "idli",
+    "fallback_triggered": true,
+    "final_result": "SUCCESS",
+    "correct": false,
+    "latency": 3763,
+    "failure_reason": "Expected food \"idli\" but got \"none\" with status \"SUCCESS\"",
+    "timestamp": "2026-08-22T06:35:34.771Z"
+  },
+  {
+    "test_case_id": "18",
+    "expected_food": "dosa",
+    "fallback_triggered": true,
+    "final_result": "SUCCESS",
+    "correct": false,
+    "latency": 3809,
+    "failure_reason": "Expected food \"dosa\" but got \"none\" with status \"SUCCESS\"",
+    "timestamp": "2026-08-22T06:35:38.580Z"
+  },
+  {
+    "test_case_id": "19",
+    "expected_food": "unknown",
+    "fallback_triggered": true,
+    "final_result": "SUCCESS",
+    "correct": true,
+    "latency": 3787,
+    "timestamp": "2026-08-22T06:35:42.367Z"
+  },
+  {
+    "test_case_id": "20",
+    "expected_food": "bad_image",
+    "fallback_triggered": false,
+    "final_result": "BAD_IMAGE",
+    "correct": true,
+    "latency": 0,
+    "timestamp": "2026-08-22T06:35:42.367Z"
+  }
+]

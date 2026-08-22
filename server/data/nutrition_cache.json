@@ -1,0 +1,62 @@
+[
+  {
+    "food_name": "egg",
+    "serving_size": 100,
+    "serving_unit": "g",
+    "calories": 513,
+    "protein": 6.41,
+    "carbohydrates": 57.7,
+    "fat": 28.8,
+    "fiber": 3.2,
+    "sugar": 54.5,
+    "sodium": 176,
+    "calcium": 128
+  },
+  {
+    "food_name": "ramen",
+    "serving_size": 100,
+    "serving_unit": "g",
+    "calories": 327,
+    "protein": 12.7,
+    "carbohydrates": 63.6,
+    "fat": 2.73,
+    "fiber": 3.6,
+    "sugar": 5.45,
+    "sodium": 1360,
+    "vitamin_a": 727,
+    "vitamin_c": 1.1,
+    "calcium": 36,
+    "iron": 4.91
+  },
+  {
+    "food_name": "falafel",
+    "serving_size": 100,
+    "serving_unit": "g",
+    "calories": 129,
+    "protein": 3.57,
+    "carbohydrates": 12.5,
+    "fat": 8.21,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 189,
+    "vitamin_c": 4.3,
+    "calcium": 71,
+    "iron": 2.57
+  },
+  {
+    "food_name": "soybean, curd cheese",
+    "serving_size": 100,
+    "serving_unit": "g",
+    "calories": 151,
+    "protein": 12.5,
+    "carbohydrates": 6.9,
+    "fat": 8.1,
+    "fiber": 0,
+    "sugar": 1.6,
+    "sodium": 20,
+    "vitamin_a": 2,
+    "calcium": 188,
+    "iron": 5.6,
+    "potassium": 199
+  }
+]
